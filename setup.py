@@ -6,7 +6,7 @@ ROOT = os.path.abspath(os.path.dirname(__file__))
 
 setup(
     name='django-nose',
-    version='1.2.1',
+    version='1.2.1.1',
     description='Makes your Django tests simple and snappy',
     long_description=open(os.path.join(ROOT, 'README.rst')).read(),
     author='Jeff Balogh',
@@ -16,7 +16,6 @@ setup(
     url='http://github.com/django-nose/django-nose',
     license='BSD',
     packages=find_packages(exclude=['testapp', 'testapp/*']),
-    include_package_data=True,
     zip_safe=False,
     install_requires=['nose>=1.2.1', 'Django>=1.2'],
     tests_require=['south>=0.7'],
